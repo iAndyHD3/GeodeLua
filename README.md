@@ -1,6 +1,6 @@
 # GeodeLua
 
-WIP lua bindings for geode
+Embeds lua inside Geometry Dash
 
 Example:
 
