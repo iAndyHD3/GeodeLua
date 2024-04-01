@@ -1,6 +1,7 @@
 # GeodeLua
 
 WIP lua bindings for geode
+
 Example:
 
 ```lua
@@ -12,7 +13,7 @@ dir = CCDirector.sharedDirector()
 CCDirector.replaceScene(dir, scene)
 ```
 
-this code is currently hardcoded to run on `MenuLayer::onMoreGames`, but hooks are planned so it would look like this:
+this code is currently hardcoded to run on `MenuLayer::onMoreGames` however hooks are planned and it would look like this:
 
 ```lua
 include("CreatorLayer")
@@ -25,10 +26,3 @@ function MenuLayer_onMoreGames(self, sender)
 end
 ```
 
-TODO in order:
-- Hooks
-- Handle overloaded functions (eg `FLAlertLayer::create`)
-- Bind class members
-
-
-codegen.cpp takes a few minutes because of templates, so be careful and avoid editing codegen.cpp accidentally
